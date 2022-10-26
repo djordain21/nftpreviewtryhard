@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+     box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: Outfit;
+}
+
+.container{
+    height: 600px;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: hsl(216, 50%, 16%);
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container{
+    position: relative;
+}
+
+.thumbnail{
+    display: block;
+    opacity: 1;
+    transition: .5s ease;
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background: hsl(178, 100%, 50%);
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+
+}
+
+.overlay:hover {
+    opacity: 0.65;
+  }
+
+.overlay img{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.description{
+    width: 100%;
+}
+
+.description h3{
+    font-size: 22px;
+    color: white;
+}
+
+.description a{
+    text-decoration: none;
+}
+
+.description h3:hover{
+    color: cyan;
+}
+
+.description p{
+    color: hsl(215, 51%, 70%);
+    font-weight: lighter;
+}
+
+.eth{
+    width: 100%;
+    height: 20px;
+    display: flex;
+}
+
+.spacing{
+    flex: 1;
+}
+
+.color{
+    margin-left: 5px;
+    color: turquoise;
+}
+
+.color-2{
+    color: hsl(215, 51%, 70%);;
+    margin-left: 5px;
+}
+
+hr{
+    border: 1px solid hsl(215, 32%, 27%);
+    width: 100%;
+}
+
+.profile-pic{
+    height: 33px;
+    width: 33px;
+}
+
+.footer{   
+    /* background: yellow; */
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-items: center;
+}
+
+.footer p{
+    line-height: 33px;
+    margin: 0;
+}
+
+.credit1{
+    color: hsl(215, 51%, 70%);
+}
+
+.credit2{
+    color: white;
+}
+
+.credit2:hover{
+    color:cyan;
+    text-decoration: none;
+}
